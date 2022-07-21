@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+.card {
+    width: 800px;
+    height: 600px;
+    background-color: hsl(0, 0%, 100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.img-mobile {
+    display: none;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-left: 5%;
+    padding-right: 10%;
+    color: hsl(228, 12%, 48%);
+}
+
+.main h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 40px;
+    font-style: bold;
+    color: black;
+}
+
+.main h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+    font-size: 14px;
+    padding-right: 50%;
+
+}
+
+.main p {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 200%;
+}
+
+.main button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+
+.new-price {
+    font-family: 'Fraunces', serif;
+    font-size: 40px;
+    font-style: bold;
+    color: hsl(158, 36%, 37%);
+    padding-right: 10px;
+}
+
+.old-price {
+    text-decoration: line-through;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border-radius: 10px;
+    display: block;
+    border: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    font-size: 1rem;
+
+}
+
+button img {
+    padding-right: 0.5rem;
+}
+
+button:hover {
+    background-color: hsl(158, 36%, 17%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 420px) {
+    .card {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+
+    .img {
+        display: none;
+    }
+
+    .img-mobile {
+        display: block;
+    }
+
+    .main {
+        gap: 15px;
+        padding-bottom: 1.5rem;
+    }
+
+    .main h3 {
+        padding-top: 2rem;
+    }
+
+    .main h1 {
+        font-size: 200%;
+    }
+}
