@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(216, 12%, 8%);
+}
+
+.container {
+    background-color: hsl(213, 19%, 15%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 30px;
+    width: 450px;
+    height: 450px;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    font-family: 'Overpass', sans-serif;
+    padding: 3rem;
+}
+
+.container h1 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    padding-top: 2rem;
+}
+
+.container p {
+    color: hsl(217, 12%, 63%);
+    font-weight: 400;
+    padding-top: 1.5rem;
+    font-size: 15px;
+    line-height: 1.5rem;
+}
+
+.thank {
+    text-align: center;
+}
+
+.thank img {
+    margin-bottom: 1.2rem;
+}
+
+.result {
+    background-color: hsl(216, 12%, 25%);
+    border-radius: 20px;
+    width: 45%;
+    position: absolute;
+    left: 27%;
+    overflow: hidden;
+
+
+}
+
+.thank h1 {
+    margin-top: 3rem;
+}
+
+.result p {
+    color: hsl(25, 97%, 53%);
+    padding: 0.5rem;
+}
+
+.circle {
+    background-color: hsl(216, 12%, 25%);
+}
+
+.star {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.star img {
+    position: absolute;
+    left: 14.5%;
+    top: 14.5%;
+}
+
+button {
+    border: none;
+    font-family: 'Overpass', sans-serif;
+}
+
+.num {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    color: hsl(217, 12%, 63%);
+    font-weight: 700;
+    margin-left: 1rem;
+}
+
+.num:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+
+.num:focus {
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}
+
+.btns {
+    padding-top: 1.5rem;
+}
+
+.submit {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 30px;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    margin-top: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+}
+
+.submit:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+.hidden {
+    display: none;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 420px) {
+    .container {
+        width: 90%;
+        font-size: 12px;
+        padding: 1.5rem;
+        /* height: 45%; */
+    }
+
+    .num {
+        width: 45px;
+        height: 45px;
+        margin-left: 0.45rem;
+    }
+
+    .star {
+        width: 45px;
+        height: 45px;
+    }
+
+    .star img {
+        position: absolute;
+        top: 2.3rem;
+        left: 2.45rem;
+    }
+
+    .result {
+        width: 60%;
+        left: 3.8rem;
+    }
+}
