@@ -1,0 +1,118 @@
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(217deg, 54%, 11%);
+}
+
+.card {
+  width: 300px;
+  background-color: hsl(216deg, 50%, 16%);
+  padding: 25px;
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  color: hsl(215deg, 51%, 70%);
+  padding-bottom: 40px;
+  box-shadow: 0px 20px 20px 20px hsl(217deg, 54%, 9%);
+  border-radius: 12.5px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 600px;
+}
+.card #nft {
+  width: 300px;
+  display: block;
+  border-radius: 12.5px;
+}
+.card .tag {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  padding-top: 5px;
+}
+.card .tag #price {
+  color: hsl(178deg, 100%, 50%);
+  font-weight: 600;
+}
+.card .tag img {
+  display: inline;
+  padding-right: 5px;
+}
+.card .tag #price-icon {
+  position: relative;
+  top: 2px;
+  width: 10px;
+}
+.card .tag #days-icon {
+  position: relative;
+  top: 3px;
+}
+.card p {
+  font-weight: 200;
+}
+
+#name {
+  font-size: 25px;
+}
+
+#name,
+.creator-name {
+  color: white;
+}
+
+.creator-tag img {
+  width: 30px;
+  border: 2px solid white;
+  border-radius: 25px;
+  position: relative;
+  top: 10px;
+  margin-right: 15px;
+}
+
+hr {
+  border: none;
+  background-color: hsl(215deg, 32%, 27%);
+  height: 0.05rem;
+}
+
+.overlay {
+  display: block;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  bottom: 270px;
+  border-radius: 12.5px;
+  background: rgba(0, 255, 247, 0.5);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.view-icon {
+  display: block;
+  position: fixed;
+  opacity: 1;
+  left: 150px;
+  top: 150px;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+#name:hover {
+  color: hsl(178deg, 100%, 50%);
+}
+
+.creator-name:hover {
+  color: hsl(178deg, 100%, 50%);
+}/*# sourceMappingURL=styles.css.map */
